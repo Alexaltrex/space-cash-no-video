@@ -1,0 +1,439 @@
+@import '../../assets/scss/app.scss';
+
+
+.app {
+  position: relative;
+  background: #08151F;
+  //padding-top: 50px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  @include desktop() {
+    //padding-top: 82px;
+  }
+
+  .stars {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .rocket {
+    z-index: 20;
+    position: absolute;
+
+    height: 283px;
+    top: 45px;
+    left: calc(50%);
+    transform: translateX(-50%);
+
+    @include desktop() {
+      width: 656px;
+      height: 653px;
+      top: 100px;
+      left: calc(50% + 40px);
+      transform: translateX(0%);
+    }
+
+
+  }
+
+  .main_left_mobile {
+    @include onlyMobile() {
+      z-index: 15;
+      position: absolute;
+      width: 295.43px;
+      height: 330px;
+      top: -60px;
+      left: -137px;
+    }
+  }
+
+  .main_left {
+    @include onlyDesktop() {
+      z-index: 15;
+      position: absolute;
+      width: auto;
+      height: auto;
+      top: 0px;
+      left: 0px;
+    }
+  }
+
+  .main_right_mobile {
+    @include onlyMobile() {
+      z-index: 15;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+  }
+
+  .main_right {
+    @include onlyDesktop() {
+      z-index: 15;
+      position: absolute;
+      top: 0px;
+      height: 100vh;
+      right: 0px;
+    }
+
+  }
+
+  .notAnimateObjects {
+    z-index: 30;
+    overflow: hidden;
+    transition: 0.3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    .left_na_1 {
+      @include onlyDesktop() {
+        position: absolute;
+        top: calc(100vh - 768px + 612px);
+        left: calc(50% - 955px);
+      }
+    }
+
+    .right_na_1 {
+      @include onlyDesktop() {
+        position: absolute;
+        top: calc(100vh - 768px + 1180px);
+        right: 0;
+      }
+    }
+
+    .right_na_2 {
+      @include onlyDesktop() {
+        position: absolute;
+        top: calc(2140px + 100vh - 768px);
+        right: 0;
+      }
+    }
+
+    .left_na_2 {
+      @include onlyDesktop() {
+        position: absolute;
+        top: calc(3615px + 100vh - 768px);
+        left: 0;
+      }
+    }
+
+    .right_na_3 {
+      @include onlyDesktop() {
+        position: absolute;
+        bottom: 580px;
+        right: 200px;
+      }
+    }
+
+    .left_na_3 {
+      @include onlyDesktop() {
+        position: absolute;
+        bottom: -80px;
+        left: 180px;
+      }
+    }
+
+  }
+
+  .animatedObjectsLower {
+    z-index: 30;
+    overflow: hidden;
+    transition: 0.3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    .innerWrapper {
+      overflow: hidden;
+      transition: 0.3s;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+
+      .left_1 {
+        @include onlyDesktop() {
+          position: absolute;
+          width: 193px;
+          height: 173px;
+          top: calc(1435px + 100vh - 768px);
+          left: calc(50% - 670px);
+        }
+      }
+
+      .right_1 {
+        @include onlyDesktop() {
+          position: absolute;
+          width: 170px;
+          height: 165px;
+          top: calc(885px + 100vh - 768px);
+          left: calc(50% + 450px);
+        }
+      }
+
+      .right_2 {
+        @include onlyDesktop() {
+          position: absolute;
+          width: 319px;
+          height: 282px;
+          top: calc(3270px + 100vh - 768px);
+          left: calc(50% + 400px);
+        }
+      }
+
+      .left_2 {
+        @include onlyDesktop() {
+          position: absolute;
+          width: 225px;
+          height: 178px;
+          top: calc(3950px + 100vh - 768px);
+          left: calc(50% - 725px);
+        }
+      }
+
+      .right_3 {
+        @include onlyDesktop() {
+          position: absolute;
+          width: 149px;
+          height: 139px;
+          top: calc(5440px + 100vh - 768px);
+          left: calc(50% + 500px);
+        }
+      }
+
+      .left_3 {
+        @include onlyDesktop() {
+          position: absolute;
+          width: 210px;
+          height: 176px;
+          top: calc(5805px + 100vh - 768px);
+          left: calc(50% - 715px);
+        }
+      }
+
+      .coin_left_1 {
+        @include onlyDesktop() {
+          z-index: 0;
+          position: absolute;
+          width: 210px;
+          height: 176px;
+          top: calc(100vh - 700px);
+          left: calc(50% - 785px);
+        }
+      }
+
+      .coin_left_2 {
+        @include onlyDesktop() {
+          z-index: 0;
+          position: absolute;
+          width: 210px;
+          height: 176px;
+          top: calc(100vh + 220px);
+          left: calc(50% - 770px);
+        }
+      }
+
+      .coin_left_3 {
+        @include onlyDesktop() {
+          z-index: 0;
+          position: absolute;
+          width: 210px;
+          height: 176px;
+          top: calc(100vh + 1300px);
+          left: calc(50% - 770px);
+        }
+      }
+
+      .coin_left_4 {
+        @include onlyDesktop() {
+          z-index: 0;
+          position: absolute;
+          width: 210px;
+          height: 176px;
+          top: calc(100vh + 2500px);
+          left: calc(50% - 530px);
+        }
+      }
+
+      .coin_left_5 {
+        @include onlyDesktop() {
+          z-index: 0;
+          position: absolute;
+          width: 210px;
+          height: 176px;
+          top: calc(100vh + 4000px);
+          left: calc(50% - 700px);
+        }
+      }
+
+      .coin_left_6 {
+        @include onlyDesktop() {
+          z-index: 0;
+          position: absolute;
+          width: 210px;
+          height: 176px;
+          top: calc(100vh + 4575px);
+          left: calc(50% - 690px);
+        }
+      }
+
+      .coin_left_7 {
+        @include onlyDesktop() {
+          z-index: 0;
+          position: absolute;
+          width: 210px;
+          height: 176px;
+          top: calc(100vh + 5222px);
+          left: calc(50% - 547px);
+        }
+      }
+
+      .coin_right_1 {
+        @include onlyDesktop() {
+          z-index: 0;
+          position: absolute;
+          width: 210px;
+          height: 176px;
+          top: calc(100vh - 900px);
+          left: calc(50% + 100px);
+        }
+      }
+
+      .coin_right_2 {
+        @include onlyDesktop() {
+          z-index: 0;
+          position: absolute;
+          width: 210px;
+          height: 176px;
+          top: calc(100vh - 600px);
+          left: calc(50% + 670px);
+        }
+      }
+
+      .coin_right_3 {
+        @include onlyDesktop() {
+          z-index: 0;
+          position: absolute;
+          width: 210px;
+          height: 176px;
+          top: calc(100vh - 460px);
+          left: calc(50% - 60px);
+        }
+      }
+
+      .coin_right_4 {
+        @include onlyDesktop() {
+          z-index: 0;
+          position: absolute;
+          width: 210px;
+          height: 176px;
+          top: calc(100vh + 725px);
+          left: calc(50% + 460px);
+        }
+      }
+
+      .coin_right_5 {
+        @include onlyDesktop() {
+          z-index: 0;
+          position: absolute;
+          width: 210px;
+          height: 176px;
+          top: calc(100vh + 1535px);
+          left: calc(50% + 475px);
+        }
+      }
+
+      .coin_right_6 {
+        @include onlyDesktop() {
+          z-index: 0;
+          position: absolute;
+          width: 210px;
+          height: 176px;
+          top: calc(100vh + 2272px);
+          left: calc(50% - 105px);
+        }
+      }
+
+      .coin_right_7 {
+        @include onlyDesktop() {
+          z-index: 0;
+          position: absolute;
+          width: 210px;
+          height: 176px;
+          top: calc(100vh + 3540px);
+          left: calc(50% + 510px);
+        }
+      }
+
+      .coin_right_8 {
+        @include onlyDesktop() {
+          z-index: 0;
+          position: absolute;
+          width: 210px;
+          height: 176px;
+          top: calc(100vh + 4115px);
+          left: calc(50% + 360px);
+        }
+      }
+
+      .coin_right_9 {
+        @include onlyDesktop() {
+          z-index: 0;
+          position: absolute;
+          width: 210px;
+          height: 176px;
+          top: calc(100vh + 5218px);
+          left: calc(50% + 490px);
+        }
+      }
+
+    }
+
+  }
+
+  .animatedObjectsUpper {
+    @include onlyDesktop() {
+      z-index: 50;
+      position: absolute;
+      width: 210px;
+      height: 176px;
+      top: calc(100vh - 280px);
+      left: calc(50% - 760px);
+    }
+  }
+
+  .burgerButton {
+    border: 0;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+
+    @include desktop() {
+      display: none;
+    }
+
+    svg {
+      width: 22px;
+      height: 22px;
+    }
+
+  }
+
+
+}
