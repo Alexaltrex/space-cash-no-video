@@ -9,6 +9,37 @@ $margin: calc( (100vw - 1140px) * 0.5 );
   overflow: hidden;
   z-index: 40;
 
+  .coin1 {
+    @include onlyMobile() {
+      position: absolute;
+      width: 100px;
+      z-index: -1;
+      top: 56px;
+      left: 0px;
+    }
+  }
+  .coin2 {
+    @include onlyMobile() {
+      position: absolute;
+      width: 100px;
+      z-index: -1;
+      top: 235px;
+      right: -10px;
+    }
+  }
+  .mask_mobile {
+    @include onlyMobile() {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      background-repeat: repeat;
+
+    }
+  }
+
   .mask {
     @include onlyDesktop() {
       position: absolute;

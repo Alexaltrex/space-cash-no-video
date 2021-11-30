@@ -8,6 +8,9 @@ import mouse from '../../assets/img/png/mouse.png';
 import useIntersectionObserver from "@react-hook/intersection-observer";
 import clsx from "clsx";
 import {time} from "../../consts/consts";
+import coin1 from '../../assets/img/gif/coin1.gif';
+import coin2 from '../../assets/img/gif/coin2.gif';
+import mask from '../../assets/img/png/objects/not-animated/main_mobile_mask.png'
 
 interface IIconLinks {
     src: any
@@ -86,7 +89,14 @@ export const FirstBlock = () => {
         <section className={style.firstBlock} ref={ref}>
 
             <div className={style.mask}/>
+            <img src={coin1} className={style.coin1}/>
+            <img src={coin2} className={style.coin2}/>
 
+            <div className={style.mask_mobile}
+                 style={{
+                     backgroundImage: `url(${mask})`,
+                 }}
+            />
 
 
             <div className={style.innerWrapper}>
