@@ -33,10 +33,11 @@
     transform: translateX(-50%);
 
     @include desktop() {
-      width: 656px;
-      height: 653px;
-      top: 100px;
-      left: calc(50% + 40px);
+
+      height: 85vh;
+      width: auto;
+      top: 13vh;
+      left: calc(50% - 12px);
       transform: translateX(0%);
     }
 
