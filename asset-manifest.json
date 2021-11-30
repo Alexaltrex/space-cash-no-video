@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/space-cash-no-video/static/css/main.b0c33380.chunk.css",
+    "main.css": "/space-cash-no-video/static/css/main.6ed22d7c.chunk.css",
     "main.js": "/space-cash-no-video/static/js/main.d3d8705b.chunk.js",
     "main.js.map": "/space-cash-no-video/static/js/main.d3d8705b.chunk.js.map",
     "runtime-main.js": "/space-cash-no-video/static/js/runtime-main.0d728c68.js",
@@ -12,7 +12,7 @@
     "static/js/3.5507c46a.chunk.js.map": "/space-cash-no-video/static/js/3.5507c46a.chunk.js.map",
     "index.html": "/space-cash-no-video/index.html",
     "static/css/2.4d8d6c40.chunk.css.map": "/space-cash-no-video/static/css/2.4d8d6c40.chunk.css.map",
-    "static/css/main.b0c33380.chunk.css.map": "/space-cash-no-video/static/css/main.b0c33380.chunk.css.map",
+    "static/css/main.6ed22d7c.chunk.css.map": "/space-cash-no-video/static/css/main.6ed22d7c.chunk.css.map",
     "static/js/2.ada7f59c.chunk.js.LICENSE.txt": "/space-cash-no-video/static/js/2.ada7f59c.chunk.js.LICENSE.txt",
     "static/media/coin1.c4214c7d.gif": "/space-cash-no-video/static/media/coin1.c4214c7d.gif",
     "static/media/coin2.ef96bee7.gif": "/space-cash-no-video/static/media/coin2.ef96bee7.gif",
@@ -51,7 +51,7 @@
     "static/js/runtime-main.0d728c68.js",
     "static/css/2.4d8d6c40.chunk.css",
     "static/js/2.ada7f59c.chunk.js",
-    "static/css/main.b0c33380.chunk.css",
+    "static/css/main.6ed22d7c.chunk.css",
     "static/js/main.d3d8705b.chunk.js"
   ]
 }
