@@ -95,7 +95,6 @@ $margin: calc( (100vw - 1140px) * 0.5 );
       letter-spacing: 0.03em;
       text-transform: uppercase;
       text-align: center;
-      padding: 0px 10px;
 
       @include bubble();
 
@@ -106,8 +105,7 @@ $margin: calc( (100vw - 1140px) * 0.5 );
         max-width: 654px;
       }
 
-      span:last-child {
-        white-space: pre-wrap;
+      span {
         background-image: linear-gradient(90deg, #AEB253 0%, #73B45C 100%);
         background-size: 100%;
         -webkit-background-clip: text;
